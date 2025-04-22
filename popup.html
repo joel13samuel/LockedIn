@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>LockedIn - Google Sign In</title>
+    <link rel="stylesheet" href="popup.css">
     <script src="popup.js" defer></script>
 </head>
 <body>
-    <h1>LockedIn - Sign In</h1>
-
-
-    <button id="googleSignIn">Sign in with Google</button>
-
-
-    <p id="status"></p>
+    <div class="container">
+        <h1 style="display: flex; align-items: center; justify-content: center; gap: 10px; color: black;">
+            LockedIn
+            <img src="locked-padlock.png" alt="Locked Padlock" style="width: 24px; height: 24px;">
+        </h1>
+        <p id="tab-productivity">Waiting for tab info...</p>
+        <button id="googleSignIn">Sign in with Google</button>
+        <button id="logoutButton" style="display: none;">Sign Out</button>
+        <button id="historyButton" style="display: none;">View History</button>
+    </div>
 </body>
 </html>
